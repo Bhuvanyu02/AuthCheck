@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Password Check</title>
+</head>
+
+<body>
+  <h1>Check Password</h1>
+  <form action="/check" method="POST" id="form">
+    <label for="password">Password:</label>
+    <input type="text" id="password" name="password" required>
+    <input type="submit" value="Submit">
+  </form>
+  <ul>
+      <li>If password matches to "Password", you will be re-directed to new screen else re-directed to this screen</li>
+  </ul>
+</body>
+
+<script>
+   window.onload = function() {
+      document.getElementById('form').reset();
+    }
+</script>
+
+</html>
